@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<!-- Mobile services -->
+    <bean id="LocationServiceFactory" class="swai.location.service.api.LocationServiceFactory" />
+	<bean id="YelpService" class="swai.location.service.impl.YelpService" />
+	<bean id="CoffeeService" class="swai.location.service.impl.CoffeeService" />
+	  
+ </beans>
