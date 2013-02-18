@@ -1,5 +1,6 @@
 package swai.location.data;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class LocationResponse {
@@ -31,6 +32,18 @@ public class LocationResponse {
 		if (locations != null)
 			locations.size();
 		return -1;
+	}
+
+	@Override
+	public String toString() {
+		String res = "LocationResponse [regionCenter=" + regionCenter
+				+ ", regionSpanDelta=" + regionSpanDelta + ", locations=";
+		Iterator<? super Location> ite = locations.iterator();
+		while (ite.hasNext()) {
+			Location loc = (Location) ite.next();
+			res += "[" + loc.toString() + "], \n";
+		}
+		return res + "]";
 	}
 
 }

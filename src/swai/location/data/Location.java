@@ -176,4 +176,22 @@ public class Location extends Coordinate {
 	public double getDistance() {
 		return distance;
 	}
+
+	@Override
+	public String toString() {
+		return "Location [id=" + id + ", name=" + name + ", claimed=" + claimed
+				+ ", closed=" + closed + ", mobileUrl=" + mobileUrl + ", url="
+				+ url + ", imageUrl=" + imageUrl + ", phone=" + phone
+				+ ", displayPhone=" + displayPhone + ", distance=" + distance
+				+ ", reviewCount=" + reviewCount + ", rating=" + rating
+				+ ", ratingImgUrl=" + ratingImgUrl + ", ratingImgUrlSmall="
+				+ ratingImgUrlSmall + ", ratingImgUrlLarge="
+				+ ratingImgUrlLarge + ", snippetText=" + snippetText
+				+ ", snippetImageUrl=" + snippetImageUrl + ", address="
+				+ address + ", displayAddress=" + displayAddress + ", city="
+				+ city + ", stateCode=" + stateCode + ", postalCode="
+				+ postalCode + ", crossStreets=" + crossStreets
+				+ ", neighborhoods=" + neighborhoods + ", geoAccuracy="
+				+ geoAccuracy + "]";
+	}
 }
