@@ -39,6 +39,7 @@ public class YelpService implements LocationService {
 	private static final String TOKEN;
 	private static final String TOKEN_SECRET;
 	private static final String API_CALL;
+	private static final String API_SEARCH_RADIUS;
 
 	static {
 		PropertiesHelper props = PropertiesHelper.getInstance();
@@ -47,6 +48,7 @@ public class YelpService implements LocationService {
 		TOKEN = props.get("yelp.token");
 		TOKEN_SECRET = props.get("yelp.tokensecret");
 		API_CALL = props.get("yelp.api.search");
+		API_SEARCH_RADIUS = props.get("yelp.api.search.radius");
 	}
 
 	private OAuthService service;
@@ -77,6 +79,9 @@ public class YelpService implements LocationService {
 		String categoryFilter = req.getCategoryFilter();
 		if (StringUtils.hasText(categoryFilter))
 			request.addQuerystringParameter("category_filter", categoryFilter);
+
+		// set radius
+		request.addQuerystringParameter("radius_filter", API_SEARCH_RADIUS);
 
 		// Sign request and send
 		service.signRequest(accessToken, request);
