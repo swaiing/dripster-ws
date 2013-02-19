@@ -1,10 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Dripster</title>
-</head>
-<body>
-	<h1>Dripster!</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Dripster for iPhone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dripster for iPhone - Discover artisanal coffee shops in New York City">
+    <meta name="author" content="Stephen Wai">
+
+    <!-- Le styles -->
+    <link href="/web/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            background-color: #ffffff;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#999999));
+            background-image: -webkit-linear-gradient(top, #ffffff, #999999);
+            background-image:    -moz-linear-gradient(top, #ffffff, #999999);
+            background-image:      -o-linear-gradient(top, #ffffff, #999999);
+            background-image:         linear-gradient(to bottom, #ffffff, #999999);
+        }
+
+        /* custom container */
+        .container-narrow {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .container-narrow > hr {
+            margin: 20px 0;
+            clear: both;
+            border-top: 1px solid #828282;
+            border-bottom: 0;
+        }
+
+        /* main marketing message and app store button */
+        .jumbotron {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 48px;
+            line-height: 1;
+        }
+
+        div.left {
+            width: 250px;
+            height: 420px;
+            float: left;
+        }
+
+        div.right {
+            width: 440px;
+            height: 420px;
+            float: left;
+            margin: 20px 0 0 10px;
+        }
+
+        /* supporting marketing content */
+        .marketing {
+            margin: 40px 0;
+        }
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+    </style>
+    <link href="/web/css/bootstrap-responsive.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+    <!--
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+    -->
+
+        <h3>Dripster for iPhone</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <div class="left">
+            <img src="/web/img/iphone-5-vertical.png">
+        </div>
+        <div class="right">
+            <h1>Discover artisanal coffee shops</h1>
+            <p class="lead">Find coffee shops in New York City that have been hand selected for their quality and attention to producing the finest coffee.</p>
+            <a class="app-download" href="https://itunes.apple.com/us/app/dripster/id572362344?mt=8">
+                <img src="/web/img/download-badge.png">
+            </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Dripster Select</h4>
+          <p>Artisanal coffee shops that feature: beans from premium roasters, trained baristas, speciality brewing methods (e.g. pour-over), and direct/fair trade sourcing, are highlighted among the search results.
+
+          <h4>Discover Coffee Shops</h4>
+          <p>Find coffee shops that are near you using your GPS-enabled iPhone.</p>
+
+        </div>
+
+        <div class="span6">
+          <h4>Map Locations</h4>
+          <p>Plot coffee shops near your locations on map, so you can easily navigate to your nearest cup of Joe.</p>
+
+          <h4>Powered by Yelp</h4>
+          <p>The location results are backed by the Yelp API and thus Yelp star ratings are also shown.</p>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Dripster 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/web/js/bootstrap.min.js"></script>
+
+  </body>
 </html>
