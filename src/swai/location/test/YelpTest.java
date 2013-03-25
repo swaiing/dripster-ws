@@ -17,16 +17,16 @@ public class YelpTest {
 		String term = "coffee";
 		
 		// somerville
-		//double lat = 42.393865;
-		//double lg = -71.120693;
+		double lat = 42.393865;
+		double lg = -71.120693;
 		
 		// hanover, nh
 		//double lat = 43.70535;
 		//double lg = -72.70535;
 		
 		// sloan
-		double lat = 42.36051;
-		double lg = -71.083928;
+		//double lat = 42.36051;
+		//double lg = -71.083928;
 		
 		LocationRequest req = new LocationRequest();
 		req.setLatitude(lat);

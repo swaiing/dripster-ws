@@ -36,8 +36,6 @@ public class CoffeeServiceServlet extends HttpServlet {
 	// GET request parameter keys
 	private static final String TERM = "term";
 	private static final String LATITUDE_LONGITUDE = "ll";
-	private static final String EXCLUDE_CHAINS = "nochains";
-	private static final String WIFI = "wifi";
 
 	private static Gson gson;
 
@@ -105,10 +103,6 @@ public class CoffeeServiceServlet extends HttpServlet {
 								+ " parameter sent: " + firstValue);
 					}
 				}
-			} else if (EXCLUDE_CHAINS.equalsIgnoreCase(key)) {
-				req.setExcludeChains("y".equalsIgnoreCase(firstValue));
-			} else if (WIFI.equalsIgnoreCase(key)) {
-				req.setWifi("y".equalsIgnoreCase(firstValue));
 			}
 		}
 		return req;
