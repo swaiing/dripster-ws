@@ -70,7 +70,10 @@ public class CoffeeServiceServlet extends HttpServlet {
 
 	/**
 	 * Format GET request:
-	 * http://localhost:8888/cs?term=coffee&ll=42.393865,-71.120693&nochains=y&wifi=y
+	 * Ann Arbor:
+	 * http://localhost:8888/cs?ll=42.272767,-83.737617&term=coffee
+	 * Somerville:
+	 * http://localhost:8888/cs?ll=42.393865,-71.12069
 	 * 
 	 * @param httpReq
 	 * @return
